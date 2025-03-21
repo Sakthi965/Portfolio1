@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Assignment</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+
+    <header>Upload Assignment</header>
+
+    <section class="upload-section">
+        <h2>Upload Your Assignment (Only You)</h2>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="subject">Select Subject:</label>
+            <select name="subject" id="subject" required>
+                <option value="Computational Hardware">Computational Hardware</option>
+                <option value="Coding for innovators">Coding for innovators</option>
+                <option value="Industrial Automation">Industrial Automation</option>
+                <option value="Applied Design thinking">Applied Design thinking</option>
+                <option value="Startup Fundamentals">Startup Fundamentals</option>
+                <option value="Prototype Develpment">Prototype Develpment</option>
+            </select>
+
+            <label for="file">Choose PDF:</label>
+            <input type="file" name="file" id="file" accept=".pdf" required>
+
+            <button type="submit" class="btn">Upload</button>
+        </form>
+
+        <a href="view_assignments.php" class="btn">View Assignments</a>
+    </section>
+
+</body>
+</html>
