@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     color: #0b0101;
+    background-color: #0b0101;
     text-align: center;
     text-decoration-style: wavy;
     text-decoration: wavy;
@@ -21,22 +22,22 @@ body {
 }
 
 
-header {
-    background-color: #6A67CE; /* Purple color */
+/* header {
+    background-color: #6A67CE;
     color: white;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
 
-}
+} */
 
 nav {
-    background-color: #a54ae2; /* Blue color */
+    background-color: orangered;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color:#0b0101;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -61,8 +62,14 @@ h2 {
     border-radius: 50%;
     object-fit:unset;
     margin-bottom: 20px;
+    outline-color:black;
+    outline-width: 4px;
+    outline-offset: 4px;
+    outline-style:solid;
 }
-
+.profile-pic:hover{
+    transform: scale(1.1);
+}
 .image-container {
     display: flex;
     justify-content:center;
@@ -76,7 +83,9 @@ h2 {
     border-radius: 10px;
     object-fit: cover;
 }
-
+.image-container img:hover{
+    transform: scale(1.1);
+}
 .btn-container {
     margin-top: 20px;
 }
@@ -91,7 +100,7 @@ h2 {
     display: inline-block;
 }
 body{
-   background-image:url('back\ 3.jpg');
+  
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -114,7 +123,9 @@ body{
     text-align: left;
     margin-top: 10px;
 }
-
+.p{
+    margin-top: 20px;
+}
 .assignment-list ul {
     list-style: none;
     padding: 0;
@@ -262,7 +273,7 @@ header {
 
 /* Navigation */
 nav {
-    background-color: #9c54b4;
+    background-color: orangered;
     padding: 1rem;
     text-align: center;
 }
@@ -347,6 +358,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    background-color: black;
     line-height: 1.6;
 }
 
@@ -362,21 +374,26 @@ header {
 
 /* Navigation */
 nav {
-    background-color: #3b3a8c;
+    background-color: orangered;
     padding: 1rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 nav a {
-    color: #3b3a8c;
+    color: white;
     text-decoration: none;
     margin: 0 1.5rem;
     font-size: 1.1rem;
+    padding: 10px;
+    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    
 }
 
 /* Section */
@@ -385,8 +402,9 @@ section {
     margin: 0 auto 2rem auto; /* Centering and bottom margin */
     padding: 2rem;
     background-color: #fff;
+    box-shadow: 2px 5px 2px 5px orangered;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Section Heading */
@@ -434,8 +452,8 @@ ul li {
 
 .btn {
     text-decoration: none;
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(40, 177, 232);
+    color: black;
     padding: 0.7rem 2.5rem;  /* Larger button padding */
     border-radius: 5px;
     font-size: 1.1rem;
@@ -446,6 +464,7 @@ ul li {
 
 .btn:hover {
     background-color: #555;
+    color:white;
 }
 
 /* Responsive Design */

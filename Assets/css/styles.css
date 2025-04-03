@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     color: #0b0101;
+    background-color: #0b0101;
     text-align: center;
     text-decoration-style: wavy;
     text-decoration: wavy;
@@ -20,18 +21,17 @@ body {
     margin-right: 75px;
 }
 
-}
-header {
-    background-color: #6A67CE; /* Purple color */
+/* header {
+    background-color: #6A67CE; 
     color: white;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
 
-}
+} */
 
 nav {
-    background-color: #a54ae2; /* Blue color */
+    background-color: orangered;
     padding: 10px;
 }
 
